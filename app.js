@@ -15,7 +15,7 @@ fs.readFile("database/user.json", "utf8", (err, data) => {
 });
 
 // MongoDB (connect) chaqirish
-const db = require("./server").db();
+// const db = require("./server").db();
 // 1: Kirish code
 
 app.use(express.static("public"));
@@ -39,7 +39,17 @@ app.get("/author", (req, res) => {
 });
 
 app.get("/", function (req, res) {
-  res.render("reja");
+  db.collection("plans")
+    .find()
+    .toArray((err, data) => {
+      if (err) {
+        console.log(err);
+        res.end("something went wrong");
+      } else {
+        console.log(data);
+        res.render("reja");
+      }
+    });
 });
 
 Module.exports = app;
