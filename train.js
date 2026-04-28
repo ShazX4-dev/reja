@@ -82,15 +82,30 @@
 
 //  -----------------      MIT Task A  --------------------
 
-// Sync versiya
-function countLetterSync(letter, word) {
-  let count = 0;
-  // bu FOR...OF sikli u word so'zidagi xar bir belgini navbatma navbat olib chiqadi
-  for (let char of word) {
-    if (char === letter) count++;
+// // Sync versiya
+// function countLetterSync(letter, word) {
+//   let count = 0;
+//   // bu FOR...OF sikli u word so'zidagi xar bir belgini navbatma navbat olib chiqadi
+//   for (let char of word) {
+//     if (char === letter) count++;
+//   }
+//   return count;
+// }
+
+// // Test
+// console.log(countLetterSync("a", "mexanizatsiyalashtirolmaganingizdandurda")); // 3
+
+// B-TASK: ad2a54y79wet0sfgb9
+
+function countDigits(matn) {
+  let sonlarSoni = 0;
+  for (let i = 0; i < matn.length; i++) {
+    let harf = matn[i];
+    if (harf >= "0" && harf <= "9") {
+      sonlarSoni++;
+    }
   }
-  return count;
+  return sonlarSoni;
 }
 
-// Test
-console.log(countLetterSync("a", "mexanizatsiyalashtirolmaganingizdandurda")); // 3
+console.log(countDigits("ad2a54y79wet0sfgb9"));

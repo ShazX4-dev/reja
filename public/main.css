@@ -1,5 +1,5 @@
-.frame {
-  position: relative;
+/* .frame { */
+/* position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -126,7 +126,7 @@
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 
   /* Yellow */
-  background: #ffb400;
+/* background: #ffb400;
 }
 
 .icon-1 {
@@ -206,4 +206,368 @@
   margin-top: 25px;
   margin-left: 45px;
   background-color: aqua;
+} */
+/*
+
+* {
+  padding: 0px; margin: 0px; font-family: sans-serif;
+}
+
+button {
+  border: none; cursor: pointer;
+}
+
+.frame {
+  position: relative; display: flex; flex-direction: row; justify-content: center; width: 100%; height: 100%; background: #e5e5e5;
+}
+
+.main_frame {
+  position: relative; display: flex; flex-direction: row; width: 1440px; height: 1312px; margin-top: 2px; background-color: #F0F0F6;
+}
+
+.main_frame .left_frame {
+  position: relative; display: flex; flex-direction: column; width: 305px; height: 1315px; background-color: white;
+}
+
+.profile {
+  position: relative; display: flex; flex-direction: column; align-items: center; width: 228px; height: 267px; margin-top: 50px; margin-left: 37px;
+}
+
+.profile .name {
+  margin-top: 29px; margin-bottom: 7px; font-family: sans-serif; font-size: 18px; font-weight: 500; line-height: 124%; letter-spacing: 0%; text-transform: capitalize; vertical-align: middle;
+}
+
+.profile .profession {
+  margin-top: 0px; margin-bottom: 19px; font-family: sans-serif; font-size: 15px; font-weight: 400; line-height: 24px; letter-spacing: 0%; text-transform: capitalize; color: #767676;
+}
+
+.profile .socials {
+  display: flex; justify-content: space-evenly; width: 228px;
+}
+
+.l {
+  position: relative; width: 220px; height: 0px;
+}
+
+.line_6 {
+  margin-top: 39px; margin-bottom: 25px; margin-left: 40px;
+}
+
+.about {
+  position: relative; display: flex; flex-direction: column; justify-content: space-between; width: 221px; height: 126px; margin-left: 40px;
+}
+
+.about .rows {
+  display: flex; justify-content: space-between;
+}
+
+.about .rows p {
+  font-family: sans-serif; font-size: 15px; font-weight: 400; line-height: 24px; letter-spacing: 0%; text-transform: capitalize;
+}
+
+.about .rows p span {
+  padding: 4px 8px; background: #FFB400;
+}
+
+.line_3 {
+  margin-top: 25px; margin-bottom: 25px; margin-left: 40px;
+}
+
+.languages {
+  position: relative; width: 220px; height: 153px; margin-left: 40px;
+}
+
+.languages h3,
+.skills h3,
+.extra_skills h3 {
+  margin-bottom: 15px; font-family: sans-serif; font-size: 18px; font-weight: 500; line-height: 124%; letter-spacing: 0%; text-transform: capitalize;
+}
+
+.languages .rows,
+.skills .rows {
+  display: flex; justify-content: space-between; margin-bottom: 5px;
+}
+
+.languages .rows p,
+.skills .rows p,
+.extra_skills p {
+  font-family: sans-serif; font-size: 15px; font-weight: 400; line-height: 24px; letter-spacing: 0%; text-transform: capitalize; color: #767676;
+}
+
+.languages .line,
+.skills .line {
+  width: 220px; height: 4px; border-width: 0.5px; border-radius: 30px; margin-bottom: 9px; background: #FFB400;
+}
+
+.languages .line_2,
+.skills .line-2 {
+  width: 208px; margin: 0px; margin-bottom: 9px;
+}
+
+.languages .line_3,
+.skills .line_3 {
+  width: 190px; margin: 0px; margin-bottom: 9px;
+}
+
+.line_4 {
+  margin-top: 25px; margin-bottom: 25px; margin-left: 40px;
+}
+
+.skills {
+  position: relative; display: flex; flex-direction: column; width: 220px; height: 242px; margin-left: 40px;
+}
+
+.skills .html_line {
+  width: 209px;
+}
+
+.skills .css_line {
+  width: 207px;
+}
+
+.skills .js_line {
+  width: 201px;
+}
+
+.skills .php_line {
+  width: 187px;
+}
+
+.skills .wordpress_line {
+  width: 207px;
+}
+
+.line_7 {
+  margin-top: 25px; margin-bottom: 25px; margin-left: 41px;
+}
+
+.extra_skills {
+  position: relative; display: flex; flex-direction: column; width: 186px; height: 148px; margin-left: 40px;
+}
+
+.extra_skills div {
+  display: flex; align-items: center; margin-bottom: 5px;
+}
+
+.extra_skills div img {
+  margin-right: 15px;
+}
+
+.line_5 {
+  margin-top: 25px; margin-bottom: 25px; margin-left: 40px;
+}
+
+.download_cv_container {
+  width: 220px; height: 40px; margin-left: 40px;
+}
+
+.d_cv_btn {
+  display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; border: none; font-family: sans-serif; font-size: 14px; font-weight: 600; line-height: 100%; letter-spacing: 0%; text-transform: uppercase; color: #4F4F4F; background: #FFB400; cursor: pointer;
+}
+
+.download_cv_container .d_cv_btn img {
+  width: 14px; height: 16px; margin-left: 19px;
+}
+
+/***************** MIDDLE FRAME ****************/
+
+.main_frame .midd_frame {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 970px;
+  height: 1259px;
+  margin-right: 27px;
+  margin-left: 30px;
+}
+
+.midd_frame .main_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 468px;
+  padding-left: 60px;
+  background: white;
+}
+
+.main_menu .left_side h1 {
+  width: 500px;
+  margin-top: 93px;
+  margin-bottom: 18px;
+  font-family: sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 124%;
+  letter-spacing: 0%;
+  color: #2b2b2b;
+}
+
+.main_menu .left_side p {
+  width: 424px;
+  margin-bottom: 25px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: #767676;
+}
+
+.main_menu .left_side .hire_me_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 154px;
+  height: 51px;
+  border: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #2b2b2b;
+  background: #ffb400;
+  vertical-align: middle;
+}
+
+.main_menu .left_side .hire_me_btn img {
+  margin-left: 9px;
+  color: #2b2b2b;
+}
+
+.main_menu .right_side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.main_menu .right_side img {
+  margin-right: 57px;
+}
+
+.midd_frame .my_services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 653px;
+  margin-top: 139px;
+  background: white;
+}
+
+.midd_frame .my_services h2 {
+  margin-bottom: 25px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 124%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: #2b2b2b;
+}
+
+.midd_frame .my_services p {
+  width: 438px;
+  margin-bottom: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-align: center;
+  text-transform: capitalize;
+  color: #767676;
+}
+
+.midd_frame .my_services .cards_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.midd_frame .my_services .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 310px;
+  height: 225px;
+  background: white;
+}
+
+.midd_frame .my_services .card h3 {
+  margin-top: 23px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 124%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: #2b2b2b;
+}
+
+.midd_frame .my_services .card p {
+  margin-top: 16px;
+  margin-bottom: 38px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #767676;
+}
+
+.midd_frame .my_services .card_advertising h3 {
+  margin-top: 31px;
+}
+
+.midd_frame .my_services .card_advertising p {
+  width: 260px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.midd_frame .my_services .card_advertising a {
+  margin-bottom: 28px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-decoration: none;
+  color: #ffb400;
+}
+
+.midd_frame .my_services .card_advertising a img {
+  margin-left: 5px;
+}
+
+/************************* RIGHT FRAME ***************************/
+
+.main_frame .right_frame {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 108px;
+  height: 1315px;
+  background-color: white;
+}
+
+.right_frame .switch_btn {
+  border: none;
+  margin-top: 50px;
+}
+
+.home_btn_container {
+  text-align: center;
+}
+
+.right_frame .menu_btns_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 493px;
+  margin-top: 174px;
 }
