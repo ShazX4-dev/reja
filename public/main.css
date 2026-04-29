@@ -1,5 +1,16 @@
-/* .frame { */
-/* position: relative;
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.frame {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -8,18 +19,17 @@
   background: #e5e5e5;
 }
 
-.main-frame {
+.main_frame {
   position: relative;
   display: flex;
   flex-direction: row;
-  align-items: center;
   width: 1440px;
   height: 1312px;
   margin-top: 2px;
-  background: #dcef86;
+  background-color: #f0f0f6;
 }
 
-.main-frame .left-frame {
+.main_frame .left_frame {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -28,31 +38,10 @@
   background-color: white;
 }
 
-.main-frame .mid-frame {
+.profile {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 970px;
-  height: 1259px;
-  margin-right: 27px;
-  margin-left: 30px;
-}
-
-.main-frame .right-frame {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 108px;
-  height: 1315px;
-  background-color: white;
-}
-
-.main-frame .left-frame .left-1 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 228px;
   height: 267px;
@@ -60,261 +49,158 @@
   margin-left: 37px;
 }
 
-.main-frame .left-frame .left-1 .left-1-1 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 156.16px;
-  height: 142.53px;
-  margin-bottom: 29.46px;
-}
-
-.main-frame .left-frame .left-1 .left-1-2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 64px;
-  height: 20.85px;
-  font-family: "Bold";
+.profile .name {
+  margin-top: 29px;
+  margin-bottom: 7px;
+  font-family: sans-serif;
   font-size: 18px;
   font-weight: 500;
-  font-style: Medium;
-  line-height: 123.6%;
+  line-height: 124%;
   letter-spacing: 0%;
-  text-align: left;
   text-transform: capitalize;
-  color: #2b2b2b;
+  vertical-align: middle;
 }
 
-.main-frame .left-frame .left-1 .left-1-3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 147.84px;
-  height: 25.65px;
-  font-family: "Inter";
+.profile .profession {
+  margin-top: 0px;
+  margin-bottom: 19px;
+  font-family: sans-serif;
   font-size: 15px;
   font-weight: 400;
-  font-style: Regular;
   line-height: 24px;
   letter-spacing: 0%;
-  text-align: left;
   text-transform: capitalize;
+  color: #767676;
 }
 
-.main-frame .left-frame .left-1 .left-icons {
-  position: relative;
+.profile .socials {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 238px;
-  margin-top: 19px;
+  justify-content: space-evenly;
+  width: 228px;
 }
 
-.link-href {
-  text-decoration: none;
-  color: black;
-}
-
-.icon {
-  position: relative;
-  width: 24.99px;
-  height: 22.8px;
-  border-radius: 50%;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-
-  /* Yellow */
-/* background: #ffb400;
-}
-
-.icon-1 {
-  position: relative;
-  right: 27.08%;
-  left: 29.17%;
-  margin-top: 5.86px;
-}
-
-.marginer {
+.l {
   position: relative;
   width: 220px;
   height: 0px;
-  border: 1.5px solid #f0f0f6;
+}
+
+.line_6 {
   margin-top: 39px;
   margin-bottom: 25px;
   margin-left: 40px;
 }
 
-.main-frame .left-frame .left-2 {
+.about {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 221px;
   height: 126px;
-  margin-right: 37px;
-  margin-left: 47px;
-  background-color: aqua;
-}
-
-.main-frame .left-frame .left-2 .left-2-1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 24px;
-  font-family: "Inter";
-  font-size: 15px;
-  font-weight: 400;
-  font-style: Regular;
-  line-height: 24px;
-  letter-spacing: 0%;
-  text-align: left;
-  text-transform: capitalize;
-  background: #ffb400;
-}
-
-.left-2-1 .span {
-  display: flex;
-  align-self: flex-end;
-}
-
-.main-frame .left-frame .left-3 {
-  position: relative;
-  width: 220px;
-  height: 153px;
-  margin-top: 25px;
-  margin-left: 45px;
-  background-color: aqua;
-}
-
-.main-frame .left-frame .left-4 {
-  position: relative;
-  width: 220px;
-  height: 252px;
-  margin-top: 25px;
-  margin-left: 45px;
-  background-color: aqua;
-}
-
-.main-frame .left-frame .left-5 {
-  position: relative;
-  width: 186px;
-  height: 148px;
-  margin-top: 25px;
-  margin-left: 45px;
-  background-color: aqua;
-} */
-/*
-
-* {
-  padding: 0px; margin: 0px; font-family: sans-serif;
-}
-
-button {
-  border: none; cursor: pointer;
-}
-
-.frame {
-  position: relative; display: flex; flex-direction: row; justify-content: center; width: 100%; height: 100%; background: #e5e5e5;
-}
-
-.main_frame {
-  position: relative; display: flex; flex-direction: row; width: 1440px; height: 1312px; margin-top: 2px; background-color: #F0F0F6;
-}
-
-.main_frame .left_frame {
-  position: relative; display: flex; flex-direction: column; width: 305px; height: 1315px; background-color: white;
-}
-
-.profile {
-  position: relative; display: flex; flex-direction: column; align-items: center; width: 228px; height: 267px; margin-top: 50px; margin-left: 37px;
-}
-
-.profile .name {
-  margin-top: 29px; margin-bottom: 7px; font-family: sans-serif; font-size: 18px; font-weight: 500; line-height: 124%; letter-spacing: 0%; text-transform: capitalize; vertical-align: middle;
-}
-
-.profile .profession {
-  margin-top: 0px; margin-bottom: 19px; font-family: sans-serif; font-size: 15px; font-weight: 400; line-height: 24px; letter-spacing: 0%; text-transform: capitalize; color: #767676;
-}
-
-.profile .socials {
-  display: flex; justify-content: space-evenly; width: 228px;
-}
-
-.l {
-  position: relative; width: 220px; height: 0px;
-}
-
-.line_6 {
-  margin-top: 39px; margin-bottom: 25px; margin-left: 40px;
-}
-
-.about {
-  position: relative; display: flex; flex-direction: column; justify-content: space-between; width: 221px; height: 126px; margin-left: 40px;
+  margin-left: 40px;
 }
 
 .about .rows {
-  display: flex; justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .about .rows p {
-  font-family: sans-serif; font-size: 15px; font-weight: 400; line-height: 24px; letter-spacing: 0%; text-transform: capitalize;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
 }
 
 .about .rows p span {
-  padding: 4px 8px; background: #FFB400;
+  padding: 4px 8px;
+  background: #ffb400;
 }
 
 .line_3 {
-  margin-top: 25px; margin-bottom: 25px; margin-left: 40px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 40px;
 }
 
 .languages {
-  position: relative; width: 220px; height: 153px; margin-left: 40px;
+  position: relative;
+  width: 220px;
+  height: 153px;
+  margin-left: 40px;
 }
 
 .languages h3,
 .skills h3,
 .extra_skills h3 {
-  margin-bottom: 15px; font-family: sans-serif; font-size: 18px; font-weight: 500; line-height: 124%; letter-spacing: 0%; text-transform: capitalize;
+  margin-bottom: 15px;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 124%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
 }
 
 .languages .rows,
 .skills .rows {
-  display: flex; justify-content: space-between; margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
 }
 
 .languages .rows p,
 .skills .rows p,
 .extra_skills p {
-  font-family: sans-serif; font-size: 15px; font-weight: 400; line-height: 24px; letter-spacing: 0%; text-transform: capitalize; color: #767676;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: #767676;
 }
 
 .languages .line,
 .skills .line {
-  width: 220px; height: 4px; border-width: 0.5px; border-radius: 30px; margin-bottom: 9px; background: #FFB400;
+  width: 220px;
+  height: 4px;
+  border-width: 0.5px;
+  border-radius: 30px;
+  margin-bottom: 9px;
+  background: #ffb400;
 }
 
 .languages .line_2,
 .skills .line-2 {
-  width: 208px; margin: 0px; margin-bottom: 9px;
+  width: 208px;
+  margin: 0px;
+  margin-bottom: 9px;
 }
 
 .languages .line_3,
 .skills .line_3 {
-  width: 190px; margin: 0px; margin-bottom: 9px;
+  width: 190px;
+  margin: 0px;
+  margin-bottom: 9px;
 }
 
 .line_4 {
-  margin-top: 25px; margin-bottom: 25px; margin-left: 40px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 40px;
 }
 
 .skills {
-  position: relative; display: flex; flex-direction: column; width: 220px; height: 242px; margin-left: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  height: 242px;
+  margin-left: 40px;
 }
 
 .skills .html_line {
@@ -338,15 +224,24 @@ button {
 }
 
 .line_7 {
-  margin-top: 25px; margin-bottom: 25px; margin-left: 41px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 41px;
 }
 
 .extra_skills {
-  position: relative; display: flex; flex-direction: column; width: 186px; height: 148px; margin-left: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 186px;
+  height: 148px;
+  margin-left: 40px;
 }
 
 .extra_skills div {
-  display: flex; align-items: center; margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
 }
 
 .extra_skills div img {
@@ -354,19 +249,39 @@ button {
 }
 
 .line_5 {
-  margin-top: 25px; margin-bottom: 25px; margin-left: 40px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 40px;
 }
 
 .download_cv_container {
-  width: 220px; height: 40px; margin-left: 40px;
+  width: 220px;
+  height: 40px;
+  margin-left: 40px;
 }
 
 .d_cv_btn {
-  display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; border: none; font-family: sans-serif; font-size: 14px; font-weight: 600; line-height: 100%; letter-spacing: 0%; text-transform: uppercase; color: #4F4F4F; background: #FFB400; cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #4f4f4f;
+  background: #ffb400;
+  cursor: pointer;
 }
 
 .download_cv_container .d_cv_btn img {
-  width: 14px; height: 16px; margin-left: 19px;
+  width: 14px;
+  height: 16px;
+  margin-left: 19px;
 }
 
 /***************** MIDDLE FRAME ****************/

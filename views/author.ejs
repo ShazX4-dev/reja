@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="/main.css" />
-    <main class="css"></main>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <title>Portfolio</title>
   </head>
   <body>
@@ -17,21 +23,30 @@
       <div class="main_frame">
         <div class="left_frame">
           <div class="profile">
-            <img src="images/profile.png" width="156px" height="142px" alt="" />
+            <img
+              src="/author/images/profile.png"
+              width="156px"
+              height="142px"
+              alt=""
+            />
             <div class="name"><%= user.name %></div>
             <div class="profession"><%= user.profession %></div>
             <div class="socials">
               <a href="#"
-                ><img src="icon/Facebook.svg" alt="" class="icon"
+                ><img src="/author/icon/Facebook.svg" alt="" class="icon"
               /></a>
               <a href="#"
-                ><img src="icon/Instagram.svg" alt="" class="icon"
+                ><img src="/author/icon/Instagram.svg" alt="" class="icon"
               /></a>
               <a href="#"
-                ><img src="icon/Linkeding.svg" alt="" class="icon"
+                ><img src="/author/icon/Linkeding.svg" alt="" class="icon"
               /></a>
-              <a href="#"><img src="icon/Twitter.svg" alt="" class="icon" /></a>
-              <a href="#"><img src="icon/Youtube.svg" alt="" class="icon" /></a>
+              <a href="#"
+                ><img src="/author/icon/Twitter.svg" alt="" class="icon"
+              /></a>
+              <a href="#"
+                ><img src="/author/icon/Youtube.svg" alt="" class="icon"
+              /></a>
             </div>
           </div>
           <div class="l line_6"></div>
@@ -50,24 +65,24 @@
             </div>
             <div class="rows">
               <p><span>Address:</span></p>
-              <p><%=user.address%></p>
+              <p><%=user.adress%></p>
             </div>
           </div>
           <div class="l line_3"></div>
           <div class="languages">
             <h3>Languages</h3>
             <div class="rows row_1">
-              <p><%=user.language[0]%></p>
+              <p><%=user.languages[0]%></p>
               <p>100%</p>
             </div>
             <div class="line"></div>
             <div class="rows row_1">
-              <p><%=user.language[1]%></p>
+              <p><%=user.languages[1]%></p>
               <p>80%</p>
             </div>
             <div class="line line_2"></div>
             <div class="rows row_1">
-              <p><%=user.language[2]%></p>
+              <p><%=user.languages[2]%></p>
               <p>60%</p>
             </div>
             <div class="line line_3"></div>
@@ -105,26 +120,42 @@
           <div class="extra_skills">
             <h3>Extra Skills</h3>
             <div>
-              <img src="icon/square_icon.svg" width="15px" height="15px" />
+              <img
+                src="/author/icon/square_icon..svg"
+                width="15px"
+                height="15px"
+              />
               <p>Bootstrap, Materialize</p>
             </div>
             <div>
-              <img src="icon/square_icon.svg" width="15px" height="15px" />
+              <img
+                src="/author/icon/square_icon..svg"
+                width="15px"
+                height="15px"
+              />
               <p>Stylus, Sass, Less</p>
             </div>
             <div>
-              <img src="icon/square_icon.svg" width="15px" height="15px" />
+              <img
+                src="/author/icon/square_icon..svg"
+                width="15px"
+                height="15px"
+              />
               <p>Gulp, Webpack, Grunt</p>
             </div>
             <div>
-              <img src="icon/square_icon.svg" width="15px" height="15px" />
+              <img
+                src="/author/icon/square_icon..svg"
+                width="15px"
+                height="15px"
+              />
               <p>GIT Knowledge</p>
             </div>
           </div>
           <div class="l line_5"></div>
           <div class="download_cv_container">
             <button class="d_cv_btn">
-              DOWNLOAD CV <img src="btn_icon/Frame.svg" />
+              DOWNLOAD CV <img src="/author/btn_icon/Frame.svg" />
             </button>
           </div>
         </div>
@@ -141,11 +172,16 @@
                 suspendisse nunc lectus.
               </p>
               <button class="hire_me_btn">
-                HIRE ME <img src="icon/arrow.svg" width="16px" height="16px" />
+                HIRE ME
+                <img src="/author/icon/vector.svg" width="16px" height="16px" />
               </button>
             </div>
             <div class="right_side">
-              <img src="images/person.png" width="326px" height="460px" />
+              <img
+                src="/author/images/person.png"
+                width="326px"
+                height="460px"
+              />
             </div>
           </div>
           <div class="my_services">
@@ -157,27 +193,27 @@
             </p>
             <div class="cards_container">
               <div class="card">
-                <img src="box_images/coding.svg" />
+                <img src="/author/box_images/coding.svg" />
                 <h3>Web Development</h3>
                 <p>Blog, E-Commerce</p>
               </div>
               <div class="card">
-                <img src="box_images/illustration.svg" />
+                <img src="/author/box_images/illustration.svg" />
                 <h3>UI/UX Design</h3>
                 <p>Mobile App, Website Design</p>
               </div>
               <div class="card">
-                <img src="box_images/Microphone.svg" />
+                <img src="/author/box_images/Microphone.svg" />
                 <h3>Sound Design</h3>
                 <p>Voice Over, Beat Making</p>
               </div>
               <div class="card">
-                <img src="box_images/game-development.svg" />
+                <img src="/author/box_images/game-development.svg" />
                 <h3>Game Design</h3>
                 <p>Character Design, Props & Objects</p>
               </div>
               <div class="card">
-                <img src="box_images/Photographer.svg" />
+                <img src="/author/box_images/Photographer.svg" />
                 <h3>Photography</h3>
                 <p>Portrait, Product Photography</p>
               </div>
@@ -194,20 +230,34 @@
         </div>
         <div class="right_frame">
           <button class="switch_btn">
-            <img src="btn_icon/Contrast.svg" width="30px" height="30px" />
+            <img
+              src="/author/btn_icon/Contrast.svg"
+              width="30px"
+              height="30px"
+            />
           </button>
           <div class="menu_btns_container">
             <div class="home_btn_container">
-              <img src="images/Popup.svg" width="65px" height="33px" />
-              <button class="menu_btn"><img src="btn_icon/Home.svg" /></button>
+              <img src="/author/images/Popup.svg" width="65px" height="33px" />
+              <button class="menu_btn">
+                <img src="/author/btn_icon/Home.svg" />
+              </button>
             </div>
-            <button class="menu_btn"><img src="btn_icon/contact.svg" /></button>
-            <button class="menu_btn"><img src="btn_icon/Cv.svg" /></button>
             <button class="menu_btn">
-              <img src="btn_icon/Portfolio.svg" />
+              <img src="/author/btn_icon/Contact.svg" />
             </button>
-            <button class="menu_btn"><img src="btn_icon/Blog.svg" /></button>
-            <button class="menu_btn"><img src="btn_icon/Contact.svg" /></button>
+            <button class="menu_btn">
+              <img src="/author/btn_icon/Cv.svg" />
+            </button>
+            <button class="menu_btn">
+              <img src="/author/btn_icon/Blog.svg" />
+            </button>
+            <button class="menu_btn">
+              <img src="/author/btn_icon/file-code.svg" />
+            </button>
+            <button class="menu_btn">
+              <img src="/author/btn_icon/Contact.svg" />
+            </button>
           </div>
         </div>
       </div>
