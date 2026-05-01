@@ -12,7 +12,7 @@ fs.readFile("database/user.json", "utf8", (err, data) => {
 
 // MongoDB connect
 const db = require("./server").db();
-
+const mongodb = require("mongodb");
 // 1: Kirish code
 app.use(express.static("public"));
 app.use(express.json());
@@ -25,12 +25,29 @@ app.set("view engine", "ejs");
 // 4 Routing code
 
 app.post("/create-item", (req, res) => {
-  console.log("user entered /create-item");
+  console.log(req.body);
   const new_reja = req.body.reja;
   db.collection("plans").insertOne({ reja: new_reja }, (err, data) => {
-    console.log(data.ops);
-    res.json(data.ops[0]);
+    if (err) {
+      console.log("somethin went wrong");
+    } else {
+      res.end("successfully added");
+    }
   });
+});
+
+app.post("/delete-item", (req, res) => {
+  const id = req.body.id;
+  db.collection("plans").deleteOne(
+    { _id: new mongodb.ObjectId(id) },
+    function (err, data) {
+      if (err) {
+        console.log(err);
+        return res.status(500).json({ state: "error" });
+      }
+      res.json({ state: "success" });
+    },
+  );
 });
 
 app.post("/delete-all", (req, res) => {
@@ -39,7 +56,7 @@ app.post("/delete-all", (req, res) => {
 });
 
 app.get("/", function (req, res) {
-  console.log("user entered /");
+  console.log("user entered /create-item");
   db.collection("plans")
     .find()
     .toArray((err, data) => {
@@ -55,12 +72,6 @@ app.get("/", function (req, res) {
 
 app.get("/author", (req, res) => {
   res.render("author", { user: user });
-});
-
-app.post("/delete-item", (req, res) => {
-  const item = req.body.item;
-  rejaList = rejaList.filter((i) => i !== item);
-  res.render("reja", { user: user, rejaList: rejaList });
 });
 
 module.exports = app;
