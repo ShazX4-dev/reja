@@ -25,7 +25,7 @@ app.set("view engine", "ejs");
 // 4 Routing code
 
 app.post("/create-item", (req, res) => {
-  console.log(req.body);
+  console.log("user entered /create-item");
   const new_reja = req.body.reja;
   db.collection("plans").insertOne({ reja: new_reja }, (err, data) => {
     if (err) {
@@ -42,7 +42,7 @@ app.post("/delete-all", (req, res) => {
 });
 
 app.get("/", function (req, res) {
-  console.log("user entered /create-item");
+  console.log("user entered /");
   db.collection("plans")
     .find()
     .toArray((err, data) => {
