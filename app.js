@@ -31,7 +31,8 @@ app.post("/create-item", (req, res) => {
     if (err) {
       console.log("somethin went wrong");
     } else {
-      res.end("successfully added");
+      // res.end("successfully added");
+      res.json(data.ops[0]);
     }
   });
 });
