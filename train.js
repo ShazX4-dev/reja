@@ -113,45 +113,53 @@
 // ***************************************************//
 
 //------------------- TASK-C -----------------//
-class Shop {
-  constructor(non, lagmon, cola) {
-    // constructor - bu classdan yangi obyekt yaratilganda ishlaydi
-    this.non = non; // nechta non borligini saqlaymiz
-    this.lagmon = lagmon; // nechta lag'mon borligini saqlaymiz
-    this.cola = cola; // nechta cola borligini saqlaymiz
-  }
+// class Shop {
+//   constructor(non, lagmon, cola) {
+//     // constructor - bu classdan yangi obyekt yaratilganda ishlaydi
+//     this.non = non; // nechta non borligini saqlaymiz
+//     this.lagmon = lagmon; // nechta lag'mon borligini saqlaymiz
+//     this.cola = cola; // nechta cola borligini saqlaymiz
+//   }
 
-  // qoldiq metodi
-  qoldiq() {
-    const vaqt = new Date();
-    const soat = vaqt.getHours();
-    const minut = vaqt.getMinutes();
-    console.log(
-      `Hozir ${soat}:${minut}da ${this.non}ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola mavjud`,
-    );
-  }
+//   // qoldiq metodi
+//   qoldiq() {
+//     const vaqt = new Date();
+//     const soat = vaqt.getHours();
+//     const minut = vaqt.getMinutes();
+//     console.log(
+//       `Hozir ${soat}:${minut}da ${this.non}ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola mavjud`,
+//     );
+//   }
 
-  // sotish metodi
-  sotish(mahsulot, soni) {
-    if (this[mahsulot] >= soni) {
-      this[mahsulot] -= soni; // mavjud sonni kamaytiramiz
-      console.log(`${soni}ta ${mahsulot} sotildi`);
-    } else {
-      console.log(`Kechirasiz, ${mahsulot} yetarli emas`);
-    }
-  }
+//   // sotish metodi
+//   sotish(mahsulot, soni) {
+//     if (this[mahsulot] >= soni) {
+//       this[mahsulot] -= soni; // mavjud sonni kamaytiramiz
+//       console.log(`${soni}ta ${mahsulot} sotildi`);
+//     } else {
+//       console.log(`Kechirasiz, ${mahsulot} yetarli emas`);
+//     }
+//   }
 
-  // qabul metodi
-  qabul(mahsulot, soni) {
-    this[mahsulot] += soni; // mavjud sonni ko‘paytiramiz
-    console.log(`${soni}ta ${mahsulot} qabul qilindi`);
-  }
+//   // qabul metodi
+//   qabul(mahsulot, soni) {
+//     this[mahsulot] += soni; // mavjud sonni ko‘paytiramiz
+//     console.log(`${soni}ta ${mahsulot} qabul qilindi`);
+//   }
+// }
+
+// // Misol ishlatish
+// const shop = new Shop(4, 5, 2);
+
+// shop.qoldiq(); // Hozirgi qoldiqni ko‘rsatadi
+// shop.sotish("non", 3); // 3ta non sotildi
+// shop.qabul("cola", 4); // 4ta cola qo‘shildi
+// shop.qoldiq(); // Yangi qoldiqni ko‘rsatadi
+
+//---------------- Task-E -----------------------//
+
+function getReverse(str) {
+  return str.split("").reverse().join("");
 }
 
-// Misol ishlatish
-const shop = new Shop(4, 5, 2);
-
-shop.qoldiq(); // Hozirgi qoldiqni ko‘rsatadi
-shop.sotish("non", 3); // 3ta non sotildi
-shop.qabul("cola", 4); // 4ta cola qo‘shildi
-shop.qoldiq(); // Yangi qoldiqni ko‘rsatadi
+console.log(getReverse("123456789"));
